@@ -8,6 +8,7 @@
 			<li>The div container should be responsive when the browser window is narrower than 980 pixels.</li>
 			<li>Please give the container a top padding of 100px.</li>
 		</ul>
+		<br>
 	</li>
  
 	<li><strong>Build a responsive tab/tab-content module</strong>
@@ -19,6 +20,7 @@
 			<li>This module should be responsive and on mobile view, it transforms into an accordion.</li>
 			<li>The tab title and tab content can be “lorem ipsum”.</li>
 		</ul>
+		<br>
 	</li>
  
 	<li><strong>Build a hash-bang-slash (i.e. “#!/“) URL navigation system.</strong>	
@@ -29,6 +31,7 @@
 			<li>The URL should have accessible names, like the title of the tab rather than a generic “tab1”, “tab2”, “tab3”, etc.</li>
 			<li>The URL , should it have a hash-bang-slash, should trigger that particular tab and show it’s respective tab-content.  For instance, when a user first enters the website by copying and pasting the link: ‘http:// www.website.com/#!/tab3’, the third tab in the tab module should trigger, it’s content shown, and the page should scroll down.</li>
 		</ul>
+		<br>
 	</li>
  
 	<li><strong>In tab content area of the first tab, build me a responsive carousel.</strong>
@@ -40,6 +43,7 @@
 			<li>The carousel should have pagination that’s clickable to navigate along with an active state.</li>
 			<li>The carousel should be responsive.</li>		
 		</ul>
+		<br>
 	</li>
 	
 </ol>
