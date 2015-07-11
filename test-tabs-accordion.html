@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Foundation - Tabs</title>
+		<link rel="stylesheet" href="stylesheets/app.css" />
+		<script src="bower_components/modernizr/modernizr.js"></script>
+	</head>
+	<body>  
+		<div class="row">
+			<div class="container"> <!-- small-12 columns -->
+				<ul data-options="deep_linking: true" class="tabs show-for-medium-up" data-tab>
+					<li class="tab-title active"><a href="#LoremIpsum">Tab / Accordion 1</a></li>
+					<li class="tab-title"><a href="#DolorSitAmet">Tab / Accordion 2</a></li>
+					<li class="tab-title"><a href="#VelitEsseMolestie">Tab / Accordion 3</a></li>
+				</ul>
+				<dl class="accordion" data-accordion>
+					<dd class="accordion-navigation">
+						<a href="#LoremIpsum" class="show-for-small-only">Accordion 1</a>
+						<div id="LoremIpsum" class="content active">
+							<div class="content-box section-box">
+								<h4>Lorem Ipsum</h4>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+								</p>
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+							</div>
+						</div>
+						<a href="#DolorSitAmet" class="show-for-small-only">Accordion 2</a>
+						<div id="DolorSitAmet" class="content">
+							<div class="content-box section-box">
+								<h4>Dolor Sit Amet</h4>
+								<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+								<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+							</div>
+						</div>
+						<a href="#VelitEsseMolestie" class="show-for-small-only">Accordion 3</a>
+						<div id="VelitEsseMolestie" class="content">
+							<div class="content-box section-box">
+								<h4>Velit Esse Molestie</h4>
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+								<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+							</div>
+						</div>	        			
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+			$(document).foundation({
+				tab: {
+					callback: function (tab) {        
+						history.pushState({}, "test", tab.context.hash);
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

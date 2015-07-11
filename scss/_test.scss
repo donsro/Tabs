@@ -1,0 +1,13 @@
+.container {
+	margin-top: rem-calc(100);
+	border: 1px solid $iron;
+}
+.tabs {
+	background-color: $smoke;
+}
+.tab-title > a:active {
+	border: 0 none;
+}
+.tabs-content > .content {
+	padding: rem-calc(20);
+}
